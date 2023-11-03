@@ -1,0 +1,13 @@
+{
+    "0": {"venueName": "Funkie's Comedy Club", "showTime": "7:30 PM", "ticketsWebsite": null, "date":"Nov 10 FRI", "location": "Long Island, NY United States"},
+    "1": {"venueName": "Laugh Factory", "showTime": "8:00 PM", "ticketsWebsite": null, "date":"Nov 11 SAT", "location": "Long Island, NY United States"},
+    "2": {"venueName": "The Comedy Cellar", "showTime": "9:00 PM", "ticketsWebsite": null, "date":"Nov 12 SUN", "location": "Long Island, NY United States"},
+    "3": {"venueName": "Stand-Up Central", "showTime": "7:45 PM", "ticketsWebsite": null,  "date":"Nov 10 FRI", "location": "Long Island, NY United States"},
+    "4": {"venueName": "Funny Bone Comedy Club", "showTime": "8:30 PM", "ticketsWebsite": null, "date":"Nov 11 SAT", "location": "Long Island, NY United States"},
+    "5": {"venueName": "Comedy Shack", "showTime": "7:00 PM", "ticketsWebsite": null, "date":"Nov 12 SUN", "location": "Long Island, NY United States"},
+    "6": {"venueName": "Haha House", "showTime": "8:15 PM", "ticketsWebsite": null, "date":"Nov 12 SUN", "location": "Long Island, NY United States"},
+    "7": {"venueName": "Jokes & Giggles", "showTime": "9:30 PM", "ticketsWebsite": null, "date":"Nov 12 SUN", "location": "Long Island, NY United States"},
+    "8": {"venueName": "Giggle Factory", "showTime": "7:15 PM", "ticketsWebsite": null, "date":"Nov 12 SUN", "location": "Long Island, NY United States"},
+    "9": {"venueName": "Chuckling Spot", "showTime": "8:45 PM", "ticketsWebsite": null, "date":"Nov 12 SUN", "location": "Long Island, NY United States"}
+  }
+  

@@ -9,7 +9,8 @@ body {
 }
 
 :root{
-  --main-orange: #e98e01
+  --main-orange: #e98e01;
+  --main-dark: rgb(20,20,20)
 }
 
 .App{
@@ -41,8 +42,6 @@ code {
   /* border: 5px solid red; */
   display: grid;
   flex: 1;
-  /* background-color: rgb(20, 20, 20); */
-
   background-color: var(--main-orange);
 }
 
@@ -67,12 +66,24 @@ code {
   top: 0;
   /* padding: 1rem; */
   z-index: 2;
+  /* opacity: 0; */
+  position: relative;
+}
+
+.home-title::after{
+  position: absolute;
+  content: 'Comedian | Podcaster';
+  left: 0;
+  top:100%;
+  font-size: 2.2rem;
+  padding-left: .5rem;
 }
 
 .home-remaining-content{
-  height: 100dvh;
+  padding: 2rem;
+  min-height: 100dvh;
   width: 100dvw;
-  background-color: rgb(20, 20, 20);
+  background-color:var(--main-dark);
 }
 
 header{
@@ -88,10 +99,10 @@ header{
 
 .home-page-one > p {
   max-width: 35%;
-  color: rgb(51, 51, 51);
+  color: rgb(250, 250, 250);
 }
 
-header > ul {
+header > div > ul {
   display: flex;
   gap: 4rem;
 }
@@ -105,4 +116,58 @@ ul{
 
 h1{
   font-size: 9rem;
+}
+
+li{
+  padding-bottom: .5rem;
+}
+
+.shows-container{
+  /* padding: 2rem;
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: .4rem; */
+  gap: 1rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.show-card{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: .1rem solid white;
+  padding: 1rem;
+
+  /* border: .1rem solid var(--main-orange); */
+  /* background-color: rgba(255, 255, 255, 0.397);
+  text-align: center;
+  display: grid;
+  color: var(--main-dark);
+  padding: 1rem;
+  gap: .5rem;
+  border-radius: .25rem;
+  width: 100%; */
+  /* border: .1rem solid var(--main-orange); */
+
+}
+
+.show-card > div > button {
+  /* appearance: none;
+  -webkit-appearance: none;
+  background-color: var(--main-dark);
+  border: none;
+  padding: .5rem;
+  border-radius: 20rem;
+  color: var(--main-orange);
+  font-weight: 600;
+  padding: .8rem;
+  width: 30%; */
+  width: 30%;
+  font-weight: 600;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1px solid rgb(144, 144, 144);
+  color: white;
 }
