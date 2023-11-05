@@ -1,27 +1,50 @@
 import wachelWilliamsPosed from '../wachelWilliamsAssets/wachelPosed.jpg'
+import wachelPosedTransparent from '../wachelWilliamsAssets/wachelPosedTransparent.png'
+import wachelStraightTransparent from '../wachelWilliamsAssets/wachelStraightTransparent.png'
 import wachelInfo from '../wachelInfo.json'
 import NextShows from '../components/NextShows'
+import "@fontsource/ibm-plex-sans/200.css"; 
+import logoTest from '../wachelWilliamsAssets/logoTest.jpeg'
+import logoTestTransparent from '../wachelWilliamsAssets/logoTest.png'
+import ContactForm from '../components/ContactForm'
+// import InstagramFeed from '../components/InstagramFeed'
 
 export default function Home() {
 
     return (
         <div className='home-page'>
-            <div className='home-page-one fullscreen'>
-                <div style={{maxWidth:'35%', display:'grid', textAlign:'center', gap:'2rem', color:'#222222'}}>
-                    <p style={{lineHeight:'1.8rem'}}>{wachelInfo.shortBio}</p>
-                    <div style={{width:'100%'}}>
-                        <button style={{width:'100%', padding:'1rem', appearance:'none', border:'none', borderRadius:'900rem', fontWeight:600, color:'var(--main-dark)'}}>Watch Me Live</button>
+             <div className='home-one'>
+                <div className='home-one-content'>
+                    <HomeOneTitle />
+                    <p style={{position:'absolute', right: '2rem', bottom:'2rem', color:'#00000073', fontWeight:600}}>@wachelrilliams</p>
+                    <div className='home-image-container'>
+                            <img src={wachelPosedTransparent}/>
                     </div>
                 </div>
             </div>
-            <div className='home-remaining-content'>
-                <div style={{flex:1, height:'100%', display:'grid', alignItems:'center'}}>
-                    <h1>Live Shows</h1>
-                    <NextShows/>
-                </div>
-
+            <div style={{height:'100%', position:'absolute', width:'100%', top:'100%', padding:'3rem', display:'grid', background:'var(--main-dark)'}}>
+                <h1>Live Shows</h1>
+                <NextShows />
             </div>
+            <div  style={{gridAutoRows:'1fr 5fr',height:'100%', position:'absolute', width:'100%', top:'200%', padding:'3rem', display:'grid', background:'var(--main-dark)', alignContent:'flex-start'}}>
+                <div style={{ height:'fit-content'}}>
+                    <h1>Contact Me</h1>
+                </div>
+                <div style={{padding:'2rem', borderRadius:'.5rem', width:'50%', justifySelf:'center', height:'100%'}}>
+                    <ContactForm />
+                </div>
+            </div> 
         </div>
-    )
-}
+    );
+};
 
+
+function HomeOneTitle(){
+    
+    return (
+        <div className='home-one-title'>
+            <h1 style={{fontSize:'1em'}}>Rachel Williams</h1>
+            <h2 style={{fontSize:'.15em', position:'relative', left:'15%'}}>COMEDIAN | ACTRESS | PODCASTER</h2>
+        </div>
+    );
+};
